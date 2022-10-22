@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cafeteria | Home</title>
+	<title>Cafeteria | Productos</title>
 	
 	<?php include('layout/styles.php'); ?>
 
@@ -35,7 +35,7 @@
 								<i class="zmdi zmdi-view-dashboard"></i>
 							</div>
 							<div class="navLateral-body-cr">
-							INICIO
+								INICIO
 							</div>
 						</a>
 					</li>
@@ -101,13 +101,58 @@
 
         
         <section class="full-width" style="padding: 40px 0;">
-            <div style="background-color: #ececec; margin: 25px; padding:20px; border-radius: 20px;"><b> Bienvenid@</b> <?php echo $_SESSION['nombre']; ?> al modulo de inventariado</div>
+            <div style="background-color: #ececec; margin: 25px; padding:20px; border-radius: 20px;"><i class="zmdi zmdi-washing-machine"></i><b> PRODUCTOS</b> </div>
         </section>
+
+        
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
+                
+                <div class="full-width" style="padding: 30px 0; margin: 25px;">
+                    <table class="table text-center" id="dataT">
+                        <thead>
+                            <tr class="text-center">
+                                <th>Nombre Producto</th>
+                                <th>Referencia</th>
+                                <th>Precio</th>
+                                <th>Peso</th>
+                                <th>Categoria</th>
+                                <th>Stock</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>$0.87</td>
+                                <td>$0.87</td>
+                                <td>$0.87</td>
+                                <td>$0.87</td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
 	
 	</section>
 
 	
 	<?php include('layout/scripts.php'); ?>
+
+    <script>
+
+        $(document).ready( function () {
+            $('#dataT').DataTable();
+        } );
+
+    </script>
 
 
 </body>
