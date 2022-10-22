@@ -77,12 +77,7 @@ html, body{
 	width: 85%;
 	margin: 0 auto;
 }
-.cover{
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
+
 .mdl-list__item-avatar{
 	line-height: 40px;
 	text-align: center;
@@ -269,14 +264,16 @@ html, body{
 .bg-info {
     background-color: #5bc0de !important;
 }
-/*=============Estilos login*/
+
+/*============= Estilos login =============*/
+
 .login-wrap{
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: var(--color-text);
-	background-color: #153145;
+	background-color: #042237;
 }
 .container-login{
 	width: 100%;
@@ -285,9 +282,22 @@ html, body{
 	height: auto;
 	margin: 0;
 	padding: 20px;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgb(255, 255, 255);
 	border-radius: 5px;
 }
+
+#buttonlogin{
+	background-color: #317db3;
+	border-radius: 18px;
+	color: #fff; 
+	margin: 0 auto; 
+	display: block;
+}
+
+#buttonlogin:hover{
+	background-color: #265a80;
+}
+
 /*=============Estilos barra superior*/
 .navBar{
 	background-color: var(--primary-color);
