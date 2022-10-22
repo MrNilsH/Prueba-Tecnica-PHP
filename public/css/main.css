@@ -277,7 +277,7 @@ html, body{
 }
 .container-login{
 	width: 100%;
-	max-width: 300px;
+	max-width: 400px;
 	box-sizing: border-box;
 	height: auto;
 	margin: 0;
@@ -297,6 +297,7 @@ html, body{
 #buttonlogin:hover{
 	background-color: #265a80;
 }
+
 
 /*=============Estilos barra superior*/
 .navBar{
