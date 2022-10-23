@@ -35,8 +35,8 @@
 ======================================================*/
 :root{
 	--color-text: #153145;
-	--primary-color: #26292c;
-	--acent-color: #ffa500;
+	--primary-color: #153145;
+	--acent-color: #102433;
 }
 html, body{
 	width: 100%;

@@ -101,7 +101,7 @@
 
         
         <section class="full-width" style="padding: 40px 0;">
-            <div style="background-color: #ececec; margin: 25px; padding:20px; border-radius: 20px;"><b> Bienvenid@</b> <?php echo $_SESSION['nombre']; ?> al modulo de inventariado</div>
+            <div style="background-color: #ececec; margin: 25px; padding:20px; border-radius: 20px; border-bottom: 2px solid #153145;"><b> Bienvenid@</b> <?php echo $_SESSION['nombre']; ?> al modulo de inventariado</div>
         </section>
 	
 	</section>
