@@ -1,34 +1,16 @@
 <?php
-
 require '../model/productos.php';
+$productos = new Productos();
 
+echo $nombre_producto = $_POST['nombre_producto_reg'];
+echo $referencia = $_POST['referencia_reg'];
+echo $precio = $_POST['precio_reg'];
+echo $peso = $_POST['peso_reg'];
+echo $categoria = $_POST['categoria_reg'];
+echo $stock = $_POST['stock_reg'];
+echo $fecha_creacion = date('Y-m-d');
 
-class ProductosController{
-
-    function __construct()
-    {
-        //Creamos una instancia de nuestro mini motor de plantillas
-        $this->view = new View();
-    }
-
-    $productos = new Productos();
- 
-    public function listarCategorias()
-    {
- 
-        $listarCategorias = $items->listarCategoriasProductos();
- 
-        //Pasamos a la vista toda la información que se desea representar
-        $data['listarCategorias'] = $listarCategorias;
- 
-        //Finalmente presentamos nuestra plantilla
-        $this->view->show("../view/productos.php", $data);
-    }
- 
-    public function agregar()
-    {
-        echo 'Aquí incluiremos nuestro formulario para insertar items';
-    }
-}
+$registrarProductos = $productos->registrar($nombre_producto, $referencia, $precio, $peso, $categoria, $stock, $fecha_creacion);
+echo $registrarProductos;
 
 ?>
